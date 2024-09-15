@@ -1,0 +1,72 @@
+@import "../../variables";
+
+.ticket-comp {
+  width: 90%;
+  margin: auto;
+
+  .input {
+    margin: 15px 0;
+    
+    input, select {
+      width: 100%;
+      background-color: $input-background;
+      outline: none;
+      border: 1px solid $input-border-color;
+      padding: 7px 0;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      color: $input-color;
+      font-size: 13px;
+      height: 40px;
+    }
+
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+      border: 1px solid $input-border-color;
+      height: 40vw;
+      font-size: 13px;
+      padding: 5px 10px;
+      color: $input-color;
+    }
+
+    label {
+      font-size: 14px;
+      color: $color-primary;
+    }
+
+    button{
+      width: 100%;
+      border: none;
+      border-radius: 2px;
+      background-color: $button-backgroundColor;
+      color: $color-secondary;
+      padding: 5px 0;
+    }
+
+    .inner-attach{
+      display: grid;
+      grid-template-columns: 87% 13%;
+
+      input{
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: -1px 2px 5px rgba($color-primary, .3);
+      }
+
+      .icon{
+        text-align: center;
+        border: 1px solid $input-border-color;
+        font-size: 20px;
+        border-radius: 0px 10px 10px 0;
+        box-shadow:  2px 2px 5px rgba($color-primary, .3);
+        color: $color-primary;
+        background-color: $input-background;
+      }
+    }
+  }
+
+}

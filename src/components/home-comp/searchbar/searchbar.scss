@@ -1,0 +1,44 @@
+@import "../../../variables";
+
+.search-bar {
+  width: 90%;
+  margin: auto;
+
+  .search {
+    display: grid;
+    grid-template-columns: 88% 12%;
+
+    input {
+      height: 40px;
+      padding: 0 10px;
+      border: 1px solid $input-border-color;
+      box-sizing: border-box;
+      border-radius: 5px 0 0 5px;
+      background-color: $input-background;
+      color: $input-color;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    button {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      box-sizing: border-box;
+      border-radius: 0 5px 5px 0;
+      color: $input-color;
+      background-color: $button-backgroundColor;
+      box-shadow: 2px 2px 4px rgba($color-primary, 0.3);
+      outline: none;
+      font-size: 20px;
+    }
+  }
+}
+
+@include computer{
+  .search-bar {
+    width: 50%;
+  }
+}

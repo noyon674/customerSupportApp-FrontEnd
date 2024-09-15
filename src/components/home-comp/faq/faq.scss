@@ -1,0 +1,62 @@
+@import "../../../variables";
+
+.faqs {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+
+  @include computer{
+    margin-top: 50px;
+  }
+
+  h4 {
+    color: $text-secondary;
+    font-family: $head-font;
+    font-weight: 600;
+
+    @include computer{
+      font-size: 28px;
+    }
+  }
+
+  .all-faqs {
+    margin-top: 20px;
+
+    .accordion-button {
+      color: $text-secondary;
+      font-family: $para-font;
+      font-size: 16px;
+      background-color: $color-secondary;
+    }
+
+    .accordion-body {
+      color: $color-primary;
+      font-size: 14px;
+      //background: $border-primary;
+      margin: 0 0 5px 0;
+
+      position: relative;
+      background: rgba($color-secondary, 0.01);
+      box-shadow: 0 15px 35px rgba($color-primary, 0.3);
+      border-radius: 0 0 15px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .accordion-button:not(.collapsed) {
+      margin: 2px;
+      font-weight: bold;
+      font-size: 20px;
+      transition: all 0.5s ease-in-out 0s;
+    }
+
+    .accordion-collapse.show .accordion-body {
+      color: $text-secondary;
+      font-size: 16px;
+      margin: 5px 0;
+      transition: all 0.01s ease-in-out 0s;
+    }
+  }
+}

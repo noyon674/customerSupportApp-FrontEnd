@@ -1,0 +1,43 @@
+@import "../../../variables";
+
+.quotation-body-section {
+  width: 90%;
+  margin: auto;
+
+  .box {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #858585;
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+
+    button {
+      border: none;
+      border-radius: 2px;
+      background-color: $text-secondary;
+      color: $text-primary;
+      padding: 5px 15px;
+    }
+  }
+
+  .quotation-item {
+    border: 1px solid #858585;
+    background-color: #fcfcfc;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    h6 {
+      font-size: 15px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../../variables";
+
+.articles {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+  h4 {
+    color: $text-secondary;
+    font-size: 16px;
+    font-family: $head-font;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: capitalize;
+  }
+
+  .article {
+    border: 1px solid $input-border-color;
+    margin: 15px 0;
+    padding: 8px 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+
+    p {
+      font-family: $head-font;
+      color: $text-secondary;
+      font-size: 14px;
+      margin: 0;
+
+      &.title {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@include computer{
+  .articles {
+    h4 {
+      font-size: 20px;
+    }
+  }
+}

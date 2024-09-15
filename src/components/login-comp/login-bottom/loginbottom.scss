@@ -1,0 +1,49 @@
+@import "../../../variables";
+
+.login-bottom {
+  width: 80%;
+  margin: auto;
+
+  button {
+    width: 100%;
+    border: none;
+    background-color: $button2-backgroundColor;
+    color: $color-secondary;
+    font-weight: 700;
+    border-radius: 22px;
+    padding: 13px 0;
+    margin: 10px 0;
+
+    &.google{
+      background-color: $google-button;
+    }
+
+    &.facebook{
+      background-color: $facebook-button;
+    }
+
+    svg{
+      margin-right: 20px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-inactive;
+    text-align: center;
+    margin-top: 30px;
+
+    a {
+      color: $short-textColor;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  }
+}
+
+@include computer {
+  .login-bottom {
+    width: 50%;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../../variables";
+
+.signup-form {
+  width: 90%;
+  margin: auto;
+
+  .bar-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    margin-top: 10px;
+
+    .div {
+      width: 100%;
+
+      p {
+        font-family: $para-font;
+        font-size: 13px;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .buttons {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+    margin-top: 10px;
+
+    button {
+      padding: 8px 0;
+      border: none;
+      border: 1px solid black;
+      background-color: transparent;
+      font-size: 12px;
+      border-radius: 2px;
+    }
+  }
+
+  .reset-text {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: $para-font;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .login-button {
+    button {
+      width: 100%;
+      border: none;
+      background-color: white;
+      color: $text-primary;
+      padding: 7px 0;
+      border: 1px solid black;
+      margin-top: 20px;
+      font-weight: 600;
+      border-radius: 2px;
+    }
+  }
+}

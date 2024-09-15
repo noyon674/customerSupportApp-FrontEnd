@@ -1,0 +1,16 @@
+@import "../../variables";
+
+h3.header-text {
+  text-align: center;
+  color: $text-secondary;
+  font-size: 16px;
+  font-family: $para-font;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+@include computer{
+  .header-text {
+    margin-top: 20px
+  }
+}

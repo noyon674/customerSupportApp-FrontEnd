@@ -1,0 +1,73 @@
+@import "./_variables.scss";
+//@import '~bootstrap/scss/bootstrap';
+
+/**
+* Template Name: Tempo
+* Updated: Jan 09 2024 with Bootstrap v5.3.2
+* Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --containerWidth: 414px;
+  --bacgroundColor: #f1f1f1;
+  --textColor: #030303;
+}
+
+.container {
+  width: var(--containerWidth);
+  margin: auto;
+  background-color: var(--bacgroundColor);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+.App {
+  background-color: $color-secondary;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+}
+
+input, textarea, select {
+  box-shadow:
+    0 1px 1px 0 rgba($color-primary, 0.1),
+    2px 2px 2px 2px rgba($color-primary, 0.1);
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}

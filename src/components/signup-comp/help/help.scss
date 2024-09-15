@@ -1,0 +1,20 @@
+@import "../../../variables";
+
+.helptext-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .text {
+    margin-top: 30px;
+
+    h2 {
+      font-family: $head-font;
+      color: $text-primary;
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+}

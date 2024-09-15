@@ -1,0 +1,36 @@
+$color-primary: black;
+$color-secondary: white;
+$color-inactive: #858585;
+$border-primary: #e5e7eb;
+$short-textColor: #e54d4d;
+$text-primary: $color-secondary;
+$text-secondary: $color-primary;
+
+$para-font: Arial, sans-serif;
+$head-font: Arial, sans-serif;
+
+$article-text: #4444;
+$text-input-back: white;
+
+$input-color: #94a3b8;
+$input-border-color: #858585;
+$input-background: #f9f9fa;
+
+$button-backgroundColor: black;
+$button2-backgroundColor: #e54d4d;
+$facebook-button: #3c83c0;
+$google-button: #f56620;
+
+
+$message-backgroundColor: burlywood;
+
+$error-messageColor: red;
+
+//width for computer screen
+$width: 1000px;
+
+@mixin computer{
+    @media (min-width:#{$width}) {
+        @content
+    }
+}
